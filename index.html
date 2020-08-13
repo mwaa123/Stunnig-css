@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movie</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <header>
+        <a href="#" class="logo"><img src="logo.png"></a>
+        <div class="toggle"> <img src="toggle.png" alt=""></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Put on a <span>Happy</span> Face</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                elit. Quisque commodo a enim id consectetur. Aenean 
+                enim leo, semper non finibus venenatis, dapibus id leo </p>
+                 <a href="#"class="play"></a><img src="play.png"> Watch Trailer</a>
+                 
+                 <div class="slide">
+                 <ul class="sci">
+                    
+                     <li><a href="splash.html"> <img src="facebook.png"></a></li>
+                     <li><a href=""> <img src="twitter.png"></a></li>
+                     <li><a href=""> <img src="instagram.png"></a></li>
+
+
+                 </ul>
+                 </div>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="safe.mp4" controls="true"></video>
+        <img src="close.png" class="close">
+    </div>
+    <script  type="text/javascript">
+    function toggle(){
+        var trailer = document.querySelector('.trailer');
+        trailer.classList.toggle('active')
+    }
+     </script>
+
 </body>
 </html>
